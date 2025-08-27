@@ -30,6 +30,13 @@
 
         $.when(pt, obv).fail(onError);
 
+        var device = smart.patient.api.fetchAll({
+          type: "Device",
+        });
+        
+        $.when(pt, obv, device).fail(onError);
+        $.when(pt, obv, device).done(function (patient, obv, device) { console.log("Device ", device);
+                                                                      
         $.when(pt, obv).done(function(patient, obv) {
           var byCodes = smart.byCodes(obv, 'code');
           var gender = patient.gender;
