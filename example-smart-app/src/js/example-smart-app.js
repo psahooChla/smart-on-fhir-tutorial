@@ -20,8 +20,10 @@
                               //'http://loinc.org|8480-6', // systolic blood pressure (DSTU2)
                               'http://loinc.org|2085-9', // cholesterol in HDL
                               'http://loinc.org|2089-1', // cholesterol in LDL
-                              'http://loinc.org|85354-9'] // BP pnl w all optional R4
-                              'http://loinc.org|8310-5',   // body temperature
+                              'http://loinc.org|85354-9', // BP pnl w all optional R4
+                              'http://loinc.org|8310-5', // Body temp
+                             ] 
+                             
                       }
                     }
                   });
